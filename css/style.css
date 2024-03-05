@@ -1,0 +1,57 @@
+/* COMPONETS */
+@import "./components/index.css";
+
+/* SECTIONS */
+@import "./sections/index.css";
+
+:root {
+  --ff-primary: "Public Sans", sans-serif;
+
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-primary-01: hsl(233, 26%, 24%);
+  --color-primary-02: hsl(136, 65%, 51%);
+  --color-primary-03: hsl(192, 70%, 51%);
+
+  --color-neutral-01: hsl(233, 8%, 62%);
+  --color-neutral-02: hsl(220, 16%, 96%);
+  --color-neutral-03: hsl(0, 0%, 98%);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--ff-primary);
+  line-height: 1.6;
+  min-height: 100dvh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  font: inherit;
+  text-decoration: none;
+}
+
+body:has(.hamburger__checkbox:checked) {
+  overflow-y: hidden;
+}
